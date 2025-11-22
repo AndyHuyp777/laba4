@@ -3,7 +3,7 @@ import psycopg
 import os
 from urllib.parse import urlparse
 
-app = Flask(name)
+app = Flask(__name__)
 
 # Подключение к БД
 DATABASE_URL = os.environ.get('DATABASE_URL')
